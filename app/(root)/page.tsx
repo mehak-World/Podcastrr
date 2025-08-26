@@ -3,11 +3,8 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import podcastData from '@/constants/podcastData'
 import PodcastCard from '@/components/PodcastCard'
-import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
 
 const page = () => {
-  const tasks = useQuery(api.tasks.get);
   return (
     <div className = "flex flex-col gap-9">
         <section className = "flex flex-col gap-5">
